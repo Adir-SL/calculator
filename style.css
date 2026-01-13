@@ -152,6 +152,7 @@ button.selected {
   padding: 8px;
   border: 1px solid #ffffff;
   border-radius: 12px;
+  overflow: auto;
 }
 
 #result:empty::after {

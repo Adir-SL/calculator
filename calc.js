@@ -7,17 +7,63 @@ function addPoint() {
 }
 
 function calcMinus() {
-  document.getElementById("result").innerText += "-";
+  text = document.getElementById("result").innerText;
+  if (
+    text.includes("-") ||
+    text.includes("+") ||
+    text.includes("/") ||
+    text.includes("*")
+  ) {
+    showResult();
+  } else {
+    document.getElementById("result").innerText += "-";
+  }
 }
 
 function calcPlus() {
-  document.getElementById("result").innerText += "+";
+  text = document.getElementById("result").innerText;
+  if (
+    text.includes("-") ||
+    text.includes("+") ||
+    text.includes("/") ||
+    text.includes("*")
+  ) {
+    showResult();
+  } else {
+    document.getElementById("result").innerText += "+";
+  }
 }
 
 function calcMultiply() {
-  document.getElementById("result").innerText += "*";
+  text = document.getElementById("result").innerText;
+  if (
+    text.includes("-") ||
+    text.includes("+") ||
+    text.includes("/") ||
+    text.includes("*")
+  ) {
+    showResult();
+  } else {
+    document.getElementById("result").innerText += "*";
+  }
 }
 
 function calcDevide() {
-  document.getElementById("result").innerText += "/";
+  text = document.getElementById("result").innerText;
+  if (
+    text.includes("-") ||
+    text.includes("+") ||
+    text.includes("/") ||
+    text.includes("*")
+  ) {
+    showResult();
+  } else {
+    document.getElementById("result").innerText += "/";
+  }
+}
+
+function showResult() {
+  document.getElementById("result").innerText = eval(
+    document.getElementById("result").innerText
+  );
 }
