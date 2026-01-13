@@ -154,6 +154,10 @@ button.selected {
   border-radius: 12px;
 }
 
+#result:empty::after {
+  content: '0';
+}
+
 .areaDiv:nth-of-type(2) {
   border-color: #E38FF8;
 }

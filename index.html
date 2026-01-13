@@ -9,15 +9,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="calc.js"></script>
   </head>
   <body>
     <div class="flex" style="flex-direction: column">
       <h1>Calc</h1>
       <div class="wrapper">
         <div class="areaDiv flex wrap">
-          <div id="result">0</div>
+          <div id="result"></div>
           <button class="secondary">/</button>
-          <button>9</button>
+          <button onclick="calcButton(9);">9</button>
           <button>8</button>
           <button>7</button>
           <button class="secondary">*</button>
