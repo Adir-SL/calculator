@@ -67,3 +67,11 @@ function showResult() {
     document.getElementById("result").innerText
   );
 }
+
+function removeLast() {
+    if(document.getElementById("result").innerText.length < 2){
+        document.getElementById("result").innerText = '';
+    }else{
+        document.getElementById("result").innerText = document.getElementById("result").innerText.slice(0, -1);
+    }
+}
