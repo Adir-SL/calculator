@@ -83,6 +83,13 @@ button {
   border: 1px solid #ffffff;
   background-color: transparent;
   cursor: pointer;
+  font-size: 1.5em;
+}
+
+button.secondary {
+  background-color: #9458DF;
+  border-color: transparent;
+  color: #090B46;
 }
 
 button:hover {
@@ -130,17 +137,21 @@ button.selected {
 
 .wrap {
   flex-wrap: wrap;
-  max-width: 200px;
+  max-width: 260px;
   justify-content: center;
+  flex-direction: row-reverse;
+  padding-bottom: 24px;
 }
 
 #result {
-  width: 200px;
+  width: 260px;
   height: fit-content;
   white-space: pre;
   font-size: 2em;
   text-align: right;
-  border: 1px solid red;
+  padding: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
 }
 
 .areaDiv:nth-of-type(2) {
