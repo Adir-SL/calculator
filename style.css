@@ -335,6 +335,7 @@ h1 {
   
   body {
     margin: 0;
+    padding: 16px;
   }
   
   .flex {
