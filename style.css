@@ -278,8 +278,13 @@ h1 {
   .wrapper {
     margin-left: 0;
     max-width: unset;
-    width: 90vw;
+    width: 100%;
     justify-content: space-between;
+  }
+  
+  .wrap {
+    max-width: unset;
+    width: 100%;
   }
   
   pre,
@@ -310,6 +315,19 @@ h1 {
   input {
     width: 3em !important;
   }
+  
+  #result {
+    width: 100%;
+  }
+  
+  button {
+    width: 18vw;
+    height: 18vw;
+  }
+  
+  .flex {
+    gap: 5.2vw;
+  }
 }
 
 @media screen and (max-width:500px) {
@@ -336,10 +354,6 @@ h1 {
   body {
     margin: 0;
     padding: 16px;
-  }
-  
-  .flex {
-    flex-direction: column;
   }
   
   .gitLogo {
